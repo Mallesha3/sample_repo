@@ -1,0 +1,74 @@
+Day 2 - Devops
+
+----------------------------------------------------------------
+
+ESC:set nu
+Sets the line numbers in the file inside the vi editor
+
+ESC:set nonu
+Removes the line numbers in the file inside the vi editor
+
+df
+(disk filesystem)
+To check the disk size
+
+df -h
+To check the disk size in human readable format
+
+df -h .
+To check the current disk size in human readable format
+
+du -sh <file_name>
+(disk usage)
+To check the disk size of the file or directory
+
+du -sh <file_name1> <file_name2>
+To check the disk size of the files mentioned
+
+du -sh *
+To check the disk size of the present directory
+
+free -h
+To check system memory
+
+-------------------------------------------------------------------
+
+Attach(>>) is used to attach output of cmd to end of file
+It will not overwrite the file content.
+Eg. ls >> file1
+
+
+Redirect(>) is used to write the output of cmd to the file
+It will overwrite the file content of the file already exists.
+Eg. ls > file2
+
+
+---------------------------------------------------------------------
+
+
+wc <file_name>
+To count the number of lines, words, and characters including space present in a file.
+-l => for lines
+-w => for words
+-c => for characters including space
+
+-------------------------------------------------------------------
+
+head <file_name>
+head is used to display the first portion of the file. By default first 10 lines will be displayed.
+
+head -3 <file_name>
+displays the first 3 lines of the line.
+
+head -n <file_name>
+displays the first n lines of the line.
+
+---------------------------------------------------------------------
+
+Assignment:
+Display last portion of the file, with the options.
+Display last 3 lines
+Display last 5 lines
+
+
+

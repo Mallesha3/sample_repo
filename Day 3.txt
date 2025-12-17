@@ -1,0 +1,110 @@
+Day 3
+
+----------------------------------------------------------------------------
+
+Permission Commands
+
+chmod <permission> <file_name>
+chmod is used to change the permissions of the files/directories.
+
+chmod <permission> <file1> <file2>
+To change the permissions of 2 files.
+
+Read => 4
+Write => 2
+Execute => 1
+
+000 => least permission
+777 => highest permission
+
+chmod 777 <file_name>
+to set all permissions for file1
+
+chmod 666 <file_name>
+to set read, write permissions to user, group and others
+
+chmod 647 <file_name>
+to set read, write for user, read write execute for other, and read for group
+
+chmod -R <permission> <dir_name>
+to change the permissions of directories and its sub directories and files it contains recursively.
+
+-----------------------------------------------------------------------------
+
+| => pipe symbol
+pipe is used to pass the output of one command to the input of next command
+
+Examples:
+
+head -5 file1 | tail -1
+To display the 5th line of a file
+
+tail -2 file1 | head -1
+To display 2nd last line of the file 
+
+tail -3 file1 | head -1
+To display 3rd last line of the file 
+
+head -3 file1 | tail -1 | wc -w
+To count the number of words present in the 3rd line of the file
+
+head -5 file1 | tail -4
+to display 2nd to 5th line
+
+head -20 file1 | tail -6
+to display 15th to 20th lines of a file.
+
+----------------------------------------------------------------------------
+
+grep
+grep is used to search a particular pattern present in a file
+
+options:
+
+to search a particular word
+grep -w <pattern> <file_name>
+
+to search multiple patterns in a file
+grep -e <pattern1> -e <pattern2> <file_name>
+
+to search the line number along with pattern 
+grep -n <pattern> <file_name>
+
+to print all the lines except the lines that have the pattern.
+grep -v <pattern> <file_name>
+
+to print all the file that have the pattern
+grep -l <pattern> *
+
+to search pattern in directories, sub-directories and files it contains.
+grep -l -R <pattern> *
+
+to print all lines that starts with particular string in a file
+grep ^<pattern> <file_name>
+
+to print all lines that ends with particular string in a file
+grep <pattern>$ <file_name>
+
+to count the number of empty lines in a file
+grep -c ^$ <file_name>
+
+to search the pattern in a case in-sensitive way
+grep -iw <pattern> <file_name>
+
+---------------------------------------------------------------------------
+
+Assignment day 3
+
+find the files that starts with letter F
+
+find how many lines starts with F file name
+
+
+
+
+
+
+
+
+
+

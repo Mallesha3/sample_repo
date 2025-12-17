@@ -1,0 +1,51 @@
+Day 1 - Devops Class
+
+
+Linux Commands
+--------------------------------------------
+
+ls : list files & directories
+ls -l : list files & directories in a long format
+ls -lt : displays the recently created files/directories at top
+ls -lrt : displays the recently created files/directories at bottom
+
+
+mkdir : to create a directory
+pwd : present working directory
+
+
+cd <dir_name>: change directory
+cd .. : to come out of the present directory
+cd ../.. : to come out of the 2 directories
+cd ../../.. : to come out of the 3 directories
+
+
+Editing files
+-------------------------
+
+vi <file_name>
+Used to edit the file
+
+press i for insert mode
+
+ESC:wq
+Write and quit the file content
+
+ESC:wq!
+Write and quit the file content forcefully
+
+ESC:q
+Quit without saving file content
+
+ESC:q!
+Quit without saving file content forcefully
+
+----------------------------------------------
+
+cat <file_name>
+Display content of the file
+
+--------------------------------------
+
+Assignment:
+Replace the first occurrences of a word on the first line
